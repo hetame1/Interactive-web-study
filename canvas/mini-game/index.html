@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>미니게임</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   </head>
   <body>
     <img src="./assets//bg1.png" id="bg1-img" class="asset-img" />
@@ -13,8 +14,22 @@
 
     <img src="./assets//Wall.png" id="wall-img" class="asset-img" />
     <img src="./assets//bird.png" id="bird-img" class="asset-img" />
+    <img src="./assets//coin.png" id="coin-img" class="asset-img" />
 
-    <canvas></canvas>
+    <main>
+      <section class="ready-screen">
+        <img src="./assets//title.png" class="title-img" />
+        <img src="./assets/play.svg" class="play-img" />
+      </section>
+
+      <section class="finish-screen">
+        <div class="distance">0m</div>
+        <div class="coin">0 coin</div>
+        <img src="./assets/replay.svg" class="replay-img" />
+      </section>
+
+      <canvas></canvas>
+    </main>
 
     <script type="module" src="./index.js"></script>
   </body>
